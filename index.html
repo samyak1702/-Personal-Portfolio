@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/33f51d19e1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="loader">
+        <div id="topheading">
+          <h5 class="reveal">Personal Portfolio</h5>
+        </div>
+        <h1 class="reveal"><span>Hi, I am Samyak Gupta</span></h1>
+      </div>
+      <div id="green"></div>
+      <!--Home-->
+      <div id="home">
+        <div id="nav">
+          <a href="#home"
+            >Samyak Gupta
+            <span class="line" id="line1"></span>
+            <span class="line" id="line2"></span>
+          </a>
+          <a href="#about"
+            >About Me
+            <span class="line" id="line1"></span>
+            <span class="line" id="line2"></span>
+          </a>
+          <a href="#Skillss"
+            >Skills
+            <span class="line" id="line1"></span>
+            <span class="line" id="line2"></span>
+          </a>
+          <a href="#project"
+            >Project
+            <span class="line" id="line1"></span>
+            <span class="line" id="line2"></span>
+          </a>
+          <a href="#Contact"
+            >Conatct Us
+            <span class="line" id="line1"></span>
+            <span class="line" id="line2"></span>
+          </a>
+        </div>
+        <div class="row">
+          <h1>I am a <br /><span class="role"></span></h1>
+
+          <img
+            src="./assests/WhatsApp Image 2023-12-02 at 08.36.04_37bd9b27.jpg"
+            class="mainImg"
+          />
+        </div>
+        <div class="row">
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/resume-example.pdf')"
+            >
+              Download CV
+            </button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='./#contact'"
+            >
+              Contact Info
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div id="socials-container">
+            <img
+              src="./assests/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://linkedin.com/'"
+            />
+            <img
+              src="./assests/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/'"
+            />
+          </div>
+        </div>
+        <!---About-->
+        <div id="about">
+          <div class="container">
+            <div class="rowAbout">
+              <div class="about-col-1">
+                <img
+                  src="./assests/WhatsApp Image 2024-03-10 at 14.42.32_4735f4da.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                  Hey there! I'm Samyak Gupta, a tech and design enthusiast. I
+                  specialize in front-end and back-end development, design with
+                  Figma, and dabble in machine learning. With a polite and
+                  professional demeanor, I navigate collaborative spaces, aiming
+                  to build the future through innovative projects. Welcome to my
+                  portfolio!
+                </p>
+                <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">
+                    Skills
+                  </p>
+                  <p class="tab-links" onclick="opentab('education')">
+                    Education
+                  </p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                    <li>
+                      <span>UI-UX</span><br />Designing web/App interfaces
+                    </li>
+                    <li>
+                      <span>Web Development</span><br />Web App Development
+                    </li>
+                    <li>
+                      <span>App Development</span><br />Building Android apps
+                    </li>
+                    <li>
+                      <span>Machine Learning</span><br />Building Intelligent
+                      Systems
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                  <ul>
+                    <li><span>2022</span><br />Delhi Public School, Bhopal</li>
+                    <li><span>2026</span><br />VIT,Vellore</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---SKills-->
+      <div id="Skillss">
+        <div class="container">
+          <h1 class="sub-title">Skills</h1>
+          <div class="skill-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Development</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                debitis.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-crop"></i>
+              <h2>UI/UX design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                debitis.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-app-store-ios"></i>
+              <h2>App Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                debitis.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!---project-->
+        <div id="project">
+          <div class="container">
+            <h1 class="sub-title">Project</h1>
+            <div class="project-list">
+              <div class="proj">
+                <img src="./assests/work-1.png" alt="" />
+                <div class="layer">
+                  <h3>Social Media App</h3>
+                  <p>
+                    The app connects you to the Talented people around the
+                    world.
+                  </p>
+                  <a href="#"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="proj">
+                <img src="./assests/work-2.png" alt="" />
+                <div class="layer">
+                  <h3>Music App</h3>
+                  <p>
+                    Dive into the rhythm of my music app, where melodies meet innovation in a seamless digital experience.
+                  </p>
+                  <a href="#"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="proj">
+                <img src="./assests/work-3.png" alt="" />
+                <div class="layer">
+                  <h3>Online Shopping App</h3>
+                  <p>
+                    Embark on a seamless shopping journey with my online shopping app, where convenience meets style at your fingertips.
+                  </p>
+                  <a href="#"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+      
+      <!----------Contact -->
+      <div id="Contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Conatct Me</h1>
+              <p>
+                <i class="fa-regular fa-paper-plane"></i>samyakg17@gmail.com
+              </p>
+              <p><i class="fa-solid fa-square-phone-flip"></i>0123456789</p>
+              <div class="social-icon">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-square-github"></i></a>
+              </div>
+            </div>
+            <div class="contact-right">
+              <form>
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email"
+                  required
+                />
+                <textarea
+                  name="message"
+                  rows="6"
+                  placeholder="Your message"
+                ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
